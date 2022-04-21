@@ -122,19 +122,39 @@ body {
     border-bottom: 2px solid #9b9b9b;
     outline: 0;
     font-size: 1.3rem;
-
     color: rgb(0, 0, 0);
     padding: 7px 0;
     background: transparent;
-  
 
 }
+#form .code{
+    font-family: inherit;
+    width: 57%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    margin-left: 70px;
+    outline: 0;
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+    padding: 7px 0;
+    background: transparent;
+
+}
+
 
 #form .lab{
     font-size: medium;
     font-family: 'Courier New', Courier, monospace;
     color: black;
     font: bold;
+
+}
+#form .cod{
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font: bold;
+    margin-left: 80px;
 
 }
 
@@ -161,7 +181,9 @@ body {
 #form .txt {
     width: 30%;
     height: 50px;
-   
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     padding: 6px 10px;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -172,12 +194,24 @@ body {
   }
   #form #succ{
    
+    margin-right: 200px;
+    height: 30px;
+    width: 120px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #9b9b9b;
+    font-size: 16px;
+    resize: none;
+  }
+  #form .pay{
     margin-left: auto;
-   
+    margin-right: auto;
+    display: block;
+    text-align: center;
   }
   #form #txtarea{
    
-    
     margin-right: auto;
    
   }

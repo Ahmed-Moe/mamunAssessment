@@ -24,27 +24,35 @@
             <input class="in" type="number" id="cardNum" name="cardNum"  pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="16" size="16" ><br>
             <label class="lab" for="cardHolder" id="cardHolderEr">Card Holder:</label><br>
             <input class="in" type="text" id="cardHolder" name="cardHolder" placeholder="Jhon Doe" ><br>
-            <label class="lab" for="expD" id="expDEr">Expiration Date:</label><br>
+           <div> <label class="lab" for="expD" id="expDEr">Expiration Date:</label>
+            <label class="lab cod" for="code" id="codeEr">Security Code:</label><br></div>
             <div class="exp-wrapper">
               <input autocomplete="off" class="in" id="expDM" maxlength="2" pattern="[0-9]*" inputmode="numerical" placeholder="MM" type="text" data-pattern-validate />
               <input autocomplete="off" class="in" id="expDY" maxlength="2" pattern="[0-9]*" inputmode="numerical" placeholder="YY" type="text" data-pattern-validate />
+              <input class="in code" type="text" id="code" name="code" ><br>
             </div>
           
-            <label class="lab" for="code" id="codeEr">Security Code:</label><br>
-            <input class="in" type="text" id="code" name="code" ><br>
+           
+            
             <label class="lab" for="mon" id="monEr" name="mon">Amount: </label><br>
             <input class="in" type="number" id="mon" name="mon"  step="0.01" min="0.01" max="1000.00"><br>
             <label class="lab" for="cur" id="curEr" name="cur">Currency used: </label><br>
             
-            <div id="select"><select id="cur" name="cur" >
-            <option value="USD">USD</option>
-            <option value="OMR">OMR</option>
-            </select></div><br>
+            <div id="select">
+              <select id="cur" name="cur" > 
+                <option value="USD">USD</option>
+                <option value="OMR">OMR</option>
+              </select>
+              <label class="lab" for="save">Amount converted to OMR: </label>
+              <textarea disabled="true" id="succ" class="suc"></textarea>
+              
+            </div><br>
             <input type="checkbox" placeholder="save" id="save">
-            <label class="lab" for="save" id="save">Save Card Details</label><br><br>
+            <label class="lab" for="save" id="save">Save Card Details</label><br>
             <div>
               <Span id="submit" >Submit</Span><br>
-              <textarea disabled="true" id="succ" class="txt"></textarea> <textarea disabled="true" id="txtarea" class="txt"></textarea>
+              <label class="lab pay" for="save">Payment Status: </label>
+              <textarea disabled="true" id="txtarea" class="txt"></textarea>
             </div> 
             
             
