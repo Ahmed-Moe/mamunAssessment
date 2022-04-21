@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css\style.css">
+
+  <title>Form Transfer Money</title>
+</head>
+<body>
+  <div>
+
+    
+    <form name="Form" id="form">
+      
+            <h1>Money Transfer Form</h1>
+            <label class="lab" for="cardNum" id="cardNumError">Card Number:</label><br>
+            <input class="in" type="number" id="cardNum" name="cardNum"  pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="16" size="16" ><br>
+            <label class="lab" for="cardHolder" id="cardHolderEr">Card Holder:</label><br>
+            <input class="in" type="text" id="cardHolder" name="cardHolder" placeholder="Jhon Doe" ><br>
+            <label class="lab" for="expD" id="expDEr">Expiration Date:</label><br>
+            <div class="exp-wrapper">
+              <input autocomplete="off" class="in" id="expDM" maxlength="2" pattern="[0-9]*" inputmode="numerical" placeholder="MM" type="text" data-pattern-validate />
+              <input autocomplete="off" class="in" id="expDY" maxlength="2" pattern="[0-9]*" inputmode="numerical" placeholder="YY" type="text" data-pattern-validate />
+            </div>
+          
+            <label class="lab" for="code" id="codeEr">Security Code:</label><br>
+            <input class="in" type="text" id="code" name="code" ><br>
+            <label class="lab" for="mon" id="monEr" name="mon">Amount: </label><br>
+            <input class="in" type="number" id="mon" name="mon"  step="0.01" min="0.01" max="1000.00"><br>
+            <label class="lab" for="cur" id="curEr" name="cur">Currency used: </label><br>
+            
+            <div id="select"><select id="cur" name="cur" >
+            <option value="USD">USD</option>
+            <option value="OMR">OMR</option>
+            </select></div><br>
+            <input type="checkbox" placeholder="save" id="save">
+            <label class="lab" for="save" id="save">Save Card Details</label><br><br>
+            <div>
+              <Span id="submit" >Submit</Span><br>
+              <textarea disabled="true" id="succ" class="txt"></textarea> <textarea disabled="true" id="txtarea" class="txt"></textarea>
+            </div> 
+            
+            
+    </form>
+
+ 
+
+</div>
+<script type="text/javascript" src="js\script1.js">
+
+</script>
+</body>
+</html>
